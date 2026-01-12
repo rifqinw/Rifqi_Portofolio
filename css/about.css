@@ -1,0 +1,79 @@
+/* ABOUT SECTION */
+#about-page {
+    min-height: 100vh;
+    padding: 80px 10%;
+    background: #ffffff;
+}
+
+.about-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* FOTO */
+.About-photo img {
+    width: 320px;
+    /* diperbesar */
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: white;
+    padding: 12px;
+    border: 4px solid #eee;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Supaya benar-benar center */
+.about-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* TEKS */
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* SKILLS */
+.skill-box span {
+    display: inline-block;
+    margin: 8px 10px 0 0;
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: 2px solid #ff6a00;
+    color: #ff6a00;
+    font-weight: 600;
+    background: transparent;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.skill-box span:hover {
+    background: #ff6a00;
+    color: white;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-photo {
+        margin-bottom: 30px;
+    }
+}

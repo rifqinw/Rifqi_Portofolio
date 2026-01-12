@@ -1,0 +1,108 @@
+#project-page {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    background: #ffffff;
+}
+
+/* Title */
+.page-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+/* Card */
+.project-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    /* kunci tinggi */
+    object-fit: cover;
+    /* crop rapi */
+    object-position: top;
+    /* fokus ke wajah */
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background: #f3f3f3;
+}
+
+/* Title */
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.project-card p {
+    color: #555;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Tech */
+.project-tech {
+    margin: 15px 0;
+}
+
+.project-tech span {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 6px 16px;
+    border-radius: 30px;
+    border: 2px solid #ff6a00;
+    color: #ff6a00;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Buttons */
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 22px;
+    border-radius: 30px;
+    background: #ff6a00;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e85d00;
+}
+
+.btn.outline {
+    background: transparent;
+    color: #ff6a00;
+    border: 2px solid #ff6a00;
+}
+
+.btn.outline:hover {
+    background: #ff6a00;
+    color: white;
+}

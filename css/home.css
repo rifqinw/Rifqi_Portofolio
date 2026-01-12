@@ -1,0 +1,66 @@
+.main {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 60px 20px;
+}
+
+.main img {
+    width: 360px;
+    transition: .4s;
+}
+
+.main img:hover {
+    transform: scale(1.1);
+}
+
+.main-detail {
+    text-align: center;
+}
+
+.main-detail h1 {
+    font-size: clamp(38px, 5vw, 68px);
+    color: orangered;
+}
+
+.main-detail h4 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn button {
+    padding: 10px 26px;
+    border-radius: 30px;
+    border: 2px solid black;
+    margin: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-1 {
+    background: white;
+}
+
+.btn-2 {
+    background: black;
+    color: white;
+}
+
+.btn button:hover {
+    transform: translateY(-3px);
+}
+
+.social i {
+    font-size: 36px;
+    margin: 0 10px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+    }
+}

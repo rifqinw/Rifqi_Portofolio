@@ -1,0 +1,132 @@
+body {
+    background: linear-gradient(135deg, #fff, #fff4ec);
+}
+
+/* BACK */
+.back-btn {
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ff6a00;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
+}
+
+/* MAIN */
+#hireme {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10%;
+}
+
+.hireme-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+/* LEFT */
+.hireme-text h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hireme-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.hireme-social {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.hireme-social a {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #ff6a00;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.hireme-social a:hover {
+    background: #ff6a00;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* FORM */
+.hireme-form {
+    background: white;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+}
+
+.hireme-form h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.hireme-form input,
+.hireme-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.hireme-form textarea {
+    resize: none;
+    height: 140px;
+}
+
+.hireme-form button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 40px;
+    background: #ff6a00;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hireme-form button:hover {
+    background: #e85d00;
+    transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .hireme-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hireme-social {
+        justify-content: center;
+    }
+}
